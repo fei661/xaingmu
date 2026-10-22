@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QQ聊天</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/res/3.png</normaloff>:/res/3.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="sidebar" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget#sidebar {
+ background-color: rgb(60, 60, 60);
+}
+QPushButton {
+ border: none;
+ background: transparent;
+}
+QPushButton:hover {
+ background-color: rgb(80, 80, 80);
+ border-radius: 8px;
+}
+</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QPushButton" name="btn_msg">
+         <property name="icon">
+          <iconset resource="res.qrc">
+           <normaloff>:/res/8.png</normaloff>:/res/8.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>48</width>
+           <height>48</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_contacts">
+         <property name="icon">
+          <iconset resource="res.qrc">
+           <normaloff>:/res/9.png</normaloff>:/res/9.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>48</width>
+           <height>48</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_groups">
+         <property name="icon">
+          <iconset resource="res.qrc">
+           <normaloff>:/res/10.png</normaloff>:/res/10.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>48</width>
+           <height>48</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_httppix">
+         <property name="icon">
+          <iconset resource="res.qrc">
+           <normaloff>:/res/22.png</normaloff>:/res/22.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>48</width>
+           <height>48</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_settings">
+         <property name="icon">
+          <iconset resource="res.qrc">
+           <normaloff>:/res/16.png</normaloff>:/res/16.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>48</width>
+           <height>48</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="main_area" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget#main_area {
+ background-color: rgb(240, 240, 240);
+}
+QLabel#label_username {
+ font: 14pt &quot;微软雅黑&quot;;
+ color: rgb(0, 0, 0);
+}
+QLineEdit {
+ border: 1px solid rgb(200, 200, 200);
+ border-radius: 15px;
+ padding: 5px 15px;
+ font: 12pt &quot;微软雅黑&quot;;
+}
+QPushButton#btnAddFriend, QPushButton#btnDeleteFriend {
+ border: none;
+ border-radius: 5px;
+ padding: 5px 15px;
+ font: 12pt &quot;微软雅黑&quot;;
+}
+QPushButton#btnAddFriend {
+ background-color: rgb(64, 158, 255);
+ color: white;
+}
+QPushButton#btnDeleteFriend {
+ background-color: rgb(245, 108, 108);
+ color: white;
+}
+QPushButton#btnAddFriend:hover {
+ background-color: rgb(44, 138, 235);
+}
+QPushButton#btnDeleteFriend:hover {
+ background-color: rgb(225, 88, 88);
+}
+QListWidget {
+ border: none;
+ background: transparent;
+}
+QListWidget::item {
+ padding: 10px;
+ border-bottom: 1px solid rgb(220, 220, 220);
+}
+QListWidget::item:hover {
+ background-color: rgb(220, 220, 220);
+}
+QListWidget::item:selected {
+ background-color: rgb(200, 230, 255);
+}
+QLabel#label_avatar {
+ border-radius: 25px;
+}
+</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QWidget" name="header" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_avatar">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_username">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="search_bar" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLineEdit" name="lineSearch">
+            <property name="placeholderText">
+             <string>搜索好友</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnAddFriend">
+            <property name="text">
+             <string>添加好友</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnDeleteFriend">
+            <property name="text">
+             <string>删除好友</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="listWidget_friends">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

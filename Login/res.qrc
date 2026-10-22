@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/2.png</file>
+        <file>res/4.png</file>
+        <file>res/5.png</file>
+        <file>res/ico/1.png</file>
+        <file>res/ico/2.png</file>
+        <file>res/ico/3.png</file>
+        <file>res/7.png</file>
+        <file>res/6.png</file>
+        <file>res/3.png</file>
+        <file>res/1.png</file>
+        <file>res/citykeys.txt</file>
+        <file>res/8.png</file>
+        <file>res/9.png</file>
+        <file>res/10.png</file>
+        <file>res/ico/14.png</file>
+        <file>res/ico/13.png</file>
+        <file>res/ico/12.png</file>
+        <file>res/ico/11.png</file>
+        <file>res/15.png</file>
+        <file>res/16.png</file>
+        <file>res/17.png</file>
+        <file>../../Login/res/18.png</file>
+        <file>../../Login/res/19.png</file>
+        <file>../../Login/res/20.png</file>
+        <file>../../Login/res/21.png</file>
+        <file>res/18.png</file>
+        <file>res/19.png</file>
+        <file>res/20.png</file>
+        <file>res/21.png</file>
+        <file>res/22.png</file>
+    </qresource>
+</RCC>
